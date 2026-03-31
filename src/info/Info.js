@@ -79,15 +79,15 @@ const info = {
     // Foto mockup: taruh di src/img/ dengan nama mock1.png, mock2.png, dst.
     portfolio: [
         {
-            title: "Project 1",
-            live: "https://yourproject.com",    // ← link demo live
-            source: "https://github.com/arizzadamm/project-1", // ← link repo
+            title: "Team Keamanan SOC Bappenas",
+            live: "timezone.bebekpintar.my.id",    // ← link demo live
+            source: "https://github.com/arizzadamm/TimeZoneBebek", // ← link repo
             image: "mock1"
         },
         {
-            title: "Project 2",
-            live: "https://yourproject2.com",
-            source: "https://github.com/arizzadamm/project-2",
+            title: "Mima Collection",
+            live: "mimacollections.arzdmr.xyz",
+            source: "https://github.com/arizzadamm/mima-collection",
             image: "mock2"
         },
         {
