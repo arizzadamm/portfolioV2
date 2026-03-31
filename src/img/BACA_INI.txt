@@ -1,0 +1,8 @@
+Taruh foto kamu di sini dengan nama "self.png"
+
+Tips:
+- Gunakan foto square (1:1 ratio)
+- Background sudah dihapus = hasil terbaik
+- Coba remove.bg untuk hapus background gratis
+
+Ukuran yang disarankan: minimal 400x400px
