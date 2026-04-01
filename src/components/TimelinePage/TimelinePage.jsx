@@ -13,65 +13,38 @@ const timelineEvents = [
     id: 1,
     type: 'education',
     date: '2019',
-    title: 'Started University',
-    subtitle: 'Universitas / Jurusan kamu',   // ← ganti
-    description: 'Mulai kuliah dan tertarik dengan dunia teknologi, khususnya keamanan sistem.',
+    title: 'Bachelor of Computer Engineering',
+    subtitle: 'Telkom University',   // ← ganti
+    description: 'Studi formal di bidang teknik komputer dengan fokus pada Hardware, sistem operasi, dan keamanan informasi.',
     tags: ['Networking', 'Linux', 'Programming'],
   },
   {
     id: 2,
-    type: 'achievement',
+    type: 'work',
     date: '2020',
-    title: 'First CTF Competition',
-    subtitle: 'Kompetisi pertama',
-    description: 'Ikut CTF pertama kali dan mulai serius belajar cybersecurity secara mandiri.',
+    title: 'Fullstack Developer @ Maximize Technology',
+    subtitle: 'First job',              
+    description: 'As a junior .NET developer at PT Maximize Technology, I contributed to the development of a web procurement application for PT Salim Ivomas Pratama Tbk using .NET Core. This involved building an API for the frontend team to consume in developing the I-Catalog mobile application, as well as designing a user-friendly web interface for the client-side applicatio',
     tags: ['CTF', 'Web Exploitation', 'Cryptography'],
   },
   {
     id: 3,
-    type: 'cert',
-    date: '2022-03',
-    title: 'eJPT Certified',
-    subtitle: 'INE Security',
-    description: 'Meraih sertifikasi penetration testing pertama — hands-on lab selama 3 hari.',
-    tags: ['Penetration Testing', 'eJPT'],
+    type: 'work',
+    date: '2021',
+    title: 'Application Operation & Dotnet Support Developer @ Astra Graphia Information Technology',
+    subtitle: 'Second job',
+    description: 'in my role as a Non-SAP Application Operation & Dotnet Support Engineer, Im maintaining and supporting the Application Operation Human Resource, Warehouse Management Service, and Procurement Management Service for PT Isuzu Astra Motor Indonesia. I collaborated with the development team to analyze bugs, gather user requirements, and effectively communicate and solve issues for users.',
+    tags: ['Operations', '.net Support', 'User Communication'],
   },
   {
     id: 4,
-    type: 'cert',
-    date: '2022-09',
-    title: 'CompTIA Security+',
-    subtitle: 'CompTIA',
-    description: 'Lulus ujian Security+ sebagai fondasi formal di bidang keamanan informasi.',
-    tags: ['Security+', 'CompTIA'],
-  },
-  {
-    id: 5,
     type: 'work',
-    date: '2023-01',
-    title: 'Security Analyst Intern',
-    subtitle: 'Nama Perusahaan',              // ← ganti
-    description: 'Internship di tim keamanan — monitoring SIEM, incident response, dan vulnerability assessment.',
-    tags: ['SOC', 'SIEM', 'Incident Response'],
-  },
-  {
-    id: 6,
-    type: 'cert',
-    date: '2023-06',
-    title: 'CEH Certified',
-    subtitle: 'EC-Council',
-    description: 'Certified Ethical Hacker — menguasai teknik ethical hacking dan metodologi penetration testing.',
-    tags: ['CEH', 'Ethical Hacking'],
-  },
-  {
-    id: 7,
-    type: 'work',
-    date: '2024',
-    title: 'Cybersecurity Engineer',
-    subtitle: 'Nama Perusahaan Sekarang',     // ← ganti
-    description: 'Full-time di posisi ini — bertanggung jawab atas security assessment, red team exercise, dan policy development.',
-    tags: ['Red Team', 'Pentest', 'Security Policy'],
-  },
+    date: '2025-06',
+    title: 'IT Security Officer @ Ministry of national development planning (Bappenas)',
+    subtitle: 'Current job',
+    description: 'As an IT Security Officer at Bappenas, I am responsible for ensuring the security and integrity of the ministry’s information systems. My role involves conducting regular security assessments, implementing security policies and procedures, and collaborating with cross-functional teams to identify and mitigate potential security risks. I also play a key role in incident response and disaster recovery planning to safeguard sensitive data and maintain business continuity.',
+    tags: ['Cyber Security', 'CompTIA'],
+  }
 ]
 // ══════════════════════════════════════════════════════════════════════════════
 
@@ -212,8 +185,7 @@ export default function TimelinePage() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
-        ✏️ Edit perjalanan kamu di <code>src/components/TimelinePage/TimelinePage.jsx</code> — cari bagian <code>timelineEvents = [...]</code>.
-        Klik setiap card untuk expand detail.
+        
       </motion.p>
     </div>
   )

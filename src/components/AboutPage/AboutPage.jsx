@@ -38,12 +38,18 @@ export default function AboutPage() {
           <p>
             Hi! I'm <strong>{info.firstName} {info.lastName}</strong>, {info.position}.
             {/* ← Tambah deskripsi dirimu di sini */}
-            I'm passionate about building clean, user-friendly applications and love turning ideas into reality through code.
-          </p>
-          <p>
+            Hi, I’m Ariza — a backend-focused software developer who enjoys building reliable and efficient systems.
+
+          I primarily work with the .NET ecosystem, where I spend most of my time developing APIs, handling data with relational databases, and making sure everything runs smoothly behind the scenes. I like clean architecture, practical solutions, and writing code that’s easy to maintain in the long run.
+
+          Recently, I’ve also been diving deeper into IT security. For me, building an application isn’t just about making it work—it also needs to be secure and resilient. That’s why I’m interested in areas like system monitoring, threat detection, and overall application security.
+
+          <p> Outside of day-to-day development, I enjoy exploring new technologies, improving my problem-solving skills, and working on side projects that challenge me to think differently.
+
+        At the end of the day, I just like building things that are useful, stable, and make life a little easier.
+          </p></p>
             {/* ← Ceritakan latar belakang, pengalaman, atau hal menarik tentang kamu */}
-            Feel free to update this section in <code>AboutPage.jsx</code> with your own story!
-          </p>
+      
         </motion.div>
 
         {/* Hobbies */}
@@ -80,10 +86,10 @@ export default function AboutPage() {
           <h2>Tech I work with</h2>
           {/* ← Sesuaikan skill kamu di sini */}
           <div className="skills-grid">
-            {[
+            {['.NET', 'SQL Server', 'Razor', 'C#',
               'JavaScript', 'TypeScript', 'React', 'Node.js',
               'Python', 'HTML/CSS', 'Git', 'SQL',
-              'REST APIs', 'Docker', 'Figma', 'Next.js'
+              'REST APIs', 'Docker'
             ].map((skill, i) => (
               <motion.span
                 key={i}

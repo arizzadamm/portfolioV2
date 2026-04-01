@@ -21,47 +21,7 @@ const articles = [
     url: 'https://medium.com/@yourusername/your-article',  // ← ganti
     readingTime: 5,
     featured: true,
-  },
-  {
-    id: 2,
-    title: 'Understanding SQL Injection: Beyond the Basics',
-    excerpt: 'Deep dive ke teknik SQL Injection yang sering diabaikan — blind SQLi, time-based, dan cara mitigasi yang benar-benar efektif.',
-    date: '2024-02-20',
-    tags: ['Web Security', 'SQL Injection', 'OWASP'],
-    url: 'https://medium.com/@yourusername/your-article-2',
-    readingTime: 8,
-    featured: false,
-  },
-  {
-    id: 3,
-    title: 'My CEH Exam Experience & Study Guide',
-    excerpt: 'Tips, resource, dan strategi belajar yang saya pakai untuk lulus CEH — termasuk yang tidak diceritakan di internet.',
-    date: '2024-03-10',
-    tags: ['CEH', 'Certification', 'Study Guide'],
-    url: 'https://dev.to/yourusername/your-article',
-    readingTime: 10,
-    featured: true,
-  },
-  {
-    id: 4,
-    title: 'Linux Privilege Escalation Cheatsheet',
-    excerpt: 'Kompilasi teknik privilege escalation di Linux yang sering muncul di CTF dan real-world pentest — dengan contoh command.',
-    date: '2024-04-05',
-    tags: ['Linux', 'Privilege Escalation', 'Pentest'],
-    url: 'https://github.com/yourusername/privesc-notes',
-    readingTime: 6,
-    featured: false,
-  },
-  {
-    id: 5,
-    title: 'Building a Home Security Lab on a Budget',
-    excerpt: 'Setup lab cybersecurity di rumah dengan modal minimal — dari virtualisasi sampai network segmentation untuk latihan aman.',
-    date: '2024-05-18',
-    tags: ['Home Lab', 'Setup', 'Beginner'],
-    url: 'https://medium.com/@yourusername/your-article-3',
-    readingTime: 7,
-    featured: false,
-  },
+  }
 ]
 // ══════════════════════════════════════════════════════════════════════════════
 
@@ -219,8 +179,7 @@ export default function BlogPage() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
-        ✏️ Edit daftar artikel di <code>src/components/BlogPage/BlogPage.jsx</code> — cari bagian <code>articles = [...]</code>.
-        Setiap artikel bisa link ke Medium, dev.to, GitHub, atau platform lainnya.
+        
       </motion.p>
     </div>
   )

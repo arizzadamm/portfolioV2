@@ -84,7 +84,7 @@ export default function ContactPage() {
         custom={3}
       >
         {/* ← Update social links di src/info/Info.js */}
-        Add or remove social links in <code>Info.js</code> under the <code>socials</code> key.
+       
       </motion.p>
     </div>
   )
