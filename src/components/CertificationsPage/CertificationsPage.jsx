@@ -213,14 +213,7 @@ export default function CertificationsPage() {
         </motion.div>
       </AnimatePresence>
 
-      <motion.p
-        className="cert-note"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-      >
-        ✏️ Edit daftar sertifikasi di <code>src/components/CertificationsPage/CertificationsPage.jsx</code> — cari bagian <code>certifications = [...]</code> di bagian atas file.
-      </motion.p>
+     
     </div>
   )
 }
