@@ -1,0 +1,214 @@
+.blog-page {
+  padding-top: 2rem;
+}
+
+.blog-header {
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .blog-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.97rem;
+    line-height: 1.7;
+    max-width: 580px;
+  }
+}
+
+.blog-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+
+  .tag-btn {
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--border);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover:not(.active) {
+      background: var(--bg-secondary);
+      color: var(--text);
+    }
+
+    &.active { font-weight: 700; }
+  }
+}
+
+// ─── Featured ─────────────────────────────────────────────────────────────────
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+// ─── Rest ─────────────────────────────────────────────────────────────────────
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+// ─── Card ─────────────────────────────────────────────────────────────────────
+.article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+  }
+
+  &.featured {
+    border-color: rgba(0,255,164,0.25);
+  }
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+
+  .article-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}
+
+.article-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text);
+  flex: 0;
+}
+
+.article-excerpt {
+  font-size: 0.87rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.article-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+
+  .article-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+
+    svg { font-size: 0.9rem; }
+  }
+
+  .article-read-link {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    transition: opacity 0.2s;
+
+    svg { font-size: 0.85rem; }
+
+    &:hover { opacity: 0.7; }
+  }
+}
+
+// ─── Show more ────────────────────────────────────────────────────────────────
+.show-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+
+  .show-more-btn {
+    padding: 0.65rem 2rem;
+    border-radius: 999px;
+    border: 1.5px solid;
+    background: transparent;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, opacity 0.2s;
+
+    &:hover { opacity: 0.75; }
+  }
+}
+
+// ─── Empty ────────────────────────────────────────────────────────────────────
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.blog-note {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  padding: 0.85rem 1.1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  line-height: 1.6;
+  margin-top: 1rem;
+
+  code {
+    background: var(--bg-secondary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+}

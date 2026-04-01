@@ -12,6 +12,10 @@ export default function NavBar({ darkMode, setDarkMode }) {
     { to: '/', label: 'home', end: true },
     { to: '/about', label: 'about' },
     { to: '/portfolio', label: 'portfolio' },
+    { to: '/certifications', label: 'certs' },
+    { to: '/timeline', label: 'journey' },
+    { to: '/tools', label: 'tools 🔐' },
+    { to: '/blog', label: 'blog' },
     { to: '/contact', label: 'contact' },
   ]
 
@@ -35,7 +39,7 @@ export default function NavBar({ darkMode, setDarkMode }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.1 }}
       >
-        {navLinks.map((link, i) => (
+        {navLinks.map((link) => (
           <li key={link.to}>
             <NavLink
               to={link.to}
